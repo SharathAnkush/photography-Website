@@ -1,0 +1,170 @@
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #1b58ff, #05b69e);
+$maincolor: #05b69e;
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+
+
+@import "global";
+@import "Home";
+
+
+@media (max-width:970px){
+    .main{ 
+.title,
+.img{
+    flex: 1 1 30rem;
+}
+}
+.svg{
+    display: none;
+}
+ 
+.contact{
+    .card{
+          width: 400px;
+
+          h2{
+              font-size: 2rem;
+          }
+    }
+}
+  
+ 
+}
+@media (max-width:882px){
+    #gallary{
+       
+    .gallary{
+        img{
+            margin-left: 3rem;
+        }
+     
+    }
+  }
+   
+}
+
+@media (max-width:864px){
+        .title,
+        .img{
+            flex: 1 1 20rem;
+        }
+
+        .title{
+            h1{
+                font-size: 3rem;
+            }
+        }
+
+        .cam{
+            height: 60%;
+        }
+     
+}
+
+@media (max-width:800px){
+
+        h1{
+            font-size: 1rem;
+        }
+    .cam{
+        position: absolute;
+        height: 40%;
+     margin-top: 20rem;
+     padding-right: 5.5rem;
+
+
+    }
+}
+
+@media (max-width:801px){
+    
+    .main{
+        margin-right: 0;
+        .title{
+            padding-left: 6rem;
+        }
+        
+    }
+    .cam{
+        padding: 0 auto 0 auto;
+    }
+    
+}    
+
+@media screen and (max-width:710px){
+    #gallery{
+    .gallery{
+        img{
+            height: 500px;
+        }
+    }
+  }
+}
+
+
+@media screen and (max-width:490px){
+    .icon{
+        display: none;
+    }
+}
+
+@media screen and (max-width:416px){
+    .main{
+        width: 95%;
+        margin: auto;
+        
+        .title{
+           padding: 0;
+           margin-bottom: 25rem;
+
+            h1{
+                font-size: 4rem;
+            }
+            h2{
+                font-size: 3.2rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+    .img{
+      margin: auto;
+    }
+    .cam{
+        padding-right: 0;
+    }
+    .contact{
+
+    h1{
+        font-size: 4rem;
+    }
+    .card{
+        width: 33rem;
+        height: 50rem;
+    }
+  }
+  
+  #gallery{
+      h1{
+        font-size: 4rem;
+      }
+    .gallery{
+        img{
+            height: 200px;
+        }
+    }
+  }
+}
